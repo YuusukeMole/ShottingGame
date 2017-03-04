@@ -12,7 +12,7 @@ public class Shoot : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.S)){
 			Rigidbody rocketbarrel;
 			rocketbarrel = Instantiate (BarrelPrefub, BarrelTransForm.position, BarrelTransForm.rotation)as Rigidbody;
-			rocketbarrel.AddForce (BarrelTransForm.right * 500);
+			rocketbarrel.AddForce (BarrelTransForm.up * 500);
 		}
 	}
 }
